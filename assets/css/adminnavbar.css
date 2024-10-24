@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+.banner img {
+    width: 60%;
+    height: auto;
+}
+
+.banner {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+}
+
+/* SIDEBAR (navbar with side navigation) */
+
+nav {
+    width: 95px;
+    /* width: 290px; */
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    background: #fff;
+    transition: 0.5s ease-out;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+nav:hover {
+    width: 290px;
+}
+
+nav .navbar {
+    padding: 1rem;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease-out;
+    overflow: hidden;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+nav .logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+nav .logo span {
+    font-size: 18px;
+    color: rgb(39, 39, 39);
+    font-weight: bold;
+    padding-left: 16px;
+    text-transform: uppercase;
+}
+
+nav .navbar a {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    color: rgb(39, 39, 39);
+    font-weight: 500;
+    overflow: hidden;
+}
+
+nav .navbar i {
+    font-size: 1.2rem;
+    color: rgb(104, 103, 103);
+    margin: 0 1.8rem 0 0.3rem;
+}
+
+.navbar a:hover {
+    background: rgb(238, 237, 237);
+    border-radius: 10px;
+    transition: 0.3s ease-out;
+}
+
+nav .logout {
+    position: absolute;
+    bottom: 20px;
+}
+
+nav .logout i {
+    padding-right: 1rem;
+}
+
+
+/* main body */
+.main-body {
+    /* padding: 1.5rem 2rem; */
+    padding-top: 24px;
+    padding-right: 32px;
+    padding-bottom: 0px;
+    padding-left: 32px;
+    width: 100%;
+}
+
+.header h1 {
+    margin: 1.3rem 0;
+    color: rgb(68, 68, 68);
+}

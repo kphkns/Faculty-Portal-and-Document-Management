@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #ffffff, #f1f1f1);
+    background-image: url("../img/nlcoldimg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content {
+    background-color: #f8f8f8;
+    padding: 20px 60px;
+    margin-top: 100px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.box {
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #262626;
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 7px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 8px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #333333;
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: bold;
+}
+
+label span {
+    margin-right: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    color: #333;
+    background-color: #fff;
+}
+
+.btn {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px 0 2px 0;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #00a651;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #007a3d;
+}
+
+.login {
+    text-align: center;
+    color: #000;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.login a {
+    color: #0059ff;
+    text-decoration: none;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    padding: 16px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}

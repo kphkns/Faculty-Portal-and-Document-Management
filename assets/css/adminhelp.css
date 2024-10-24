@@ -1,0 +1,101 @@
+.help-support {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.help-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.help-nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.help-nav ul li {
+    padding: 10px;
+    margin: 10px;
+}
+
+.help-nav ul li a {
+    color: #1a1a1a;
+    font-size: 1.6rem;
+}
+
+.help-nav ul li a:hover {
+    color: #4d4d4d;
+}
+
+.help-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
+
+.help-main section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
+
+.help-main section h2 {
+    font-size: 2rem;
+    padding: 10px;
+    margin: 10px;
+    color: #333;
+    border-bottom: 1px solid #333;
+}
+
+.help-main section p {
+    padding: 10px;
+    margin: 10px;
+    color: #404040;
+    font-size: 1.2rem;
+}
+
+.help-main section ul {
+    font-size: 1.2rem;
+    color: #404040;
+    padding: 6px;
+    margin: 6px;
+}
+
+.help-main section ol {
+    font-size: 1.2rem;
+    color: #404040;
+    padding: 6px;
+    margin: 6px;
+}
+
+
+.help-main section dl {
+    font-size: 1.2rem;
+    color: #404040;
+    padding: 6px;
+    margin: 6px;
+}
+
+.help-main section .user-feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.help-main section .user-feature .user-featurelist {
+    padding: 7px;
+    margin: 7px;
+}

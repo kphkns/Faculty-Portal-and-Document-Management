@@ -1,0 +1,31 @@
+Options -Indexes
+
+RewriteEngine On
+RewriteBase /docmanagement/
+
+# Redirect URLs with .php extension to extensionless URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# Redirect login.php to login
+RewriteCond %{THE_REQUEST} /docmanagement/login\.php [NC]
+RewriteRule ^login\.php$ /docmanagement/login [R=301,L]
+
+# Exclude the specific URL from the 404 redirect
+RewriteCond %{REQUEST_URI} !^/docmanagement/$
+
+# Redirect to 404.php if Options -Indexes is accessed
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L,R=404]
+
+ErrorDocument 404 /docmanagement/404.php
+
+
+# Options -Indexes
+# RewriteEngine On
+# RewriteBase /
+# RewriteCond %{REQUEST_FILENAME} -d
+# RewriteRule ^ - [L,R=404]
+
+# ErrorDocument 404 /docmanagement/404.php

@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+
+body {
+    background: #f2f2f2;
+}
+
+.banner img {
+    width: 60%;
+    height: auto;
+}
+
+.banner {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 1025px;
+    margin: 0 auto;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #444;
+    margin-left: 1.5rem;
+}
+
+.navbar a:hover {
+    color: #000;
+}
+
+.navbar .nav-item {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .nav-item:hover {
+    background-color: #eee;
+}
+
+
+/* main body */
+.main-body {
+    padding: 1.5rem 2rem;
+    width: 100%;
+}
+
+.header {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    color: rgb(68, 68, 68);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+.fa-solid {
+    font-size: 1.5em;
+    display: none;
+}
+
+/* Media query for screens smaller than 1050 pixels */
+@media (max-width: 1050px) {
+
+    .nav-items {
+        display: none;
+    }
+
+    .showtoggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fa-solid {
+        display: block;
+        padding: 20px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+    }
+
+    .navbar {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-item {
+        text-align: center;
+    }
+
+    .banner img {
+        width: 100%;
+        height: auto;
+    }
+
+}

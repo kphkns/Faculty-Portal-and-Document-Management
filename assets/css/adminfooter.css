@@ -1,0 +1,17 @@
+footer {
+    position: sticky;
+    bottom: 0;
+    color: #808080;
+    text-align: center;
+    border-top: 1px solid #bfbfbf;
+    padding: 10px;
+    margin: 10px;
+    width: -webkit-fill-available;
+    width: fill-available;
+    width: -moz-available;
+
+}
+
+.footer-text {
+    text-align: center;
+}

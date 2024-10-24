@@ -1,1 +1,5 @@
-# Faculty-Portal-and-Document-Management
+<<<<<<< HEAD
+Your local changes
+=======
+Changes from the remote
+>>>>>>> branch-name

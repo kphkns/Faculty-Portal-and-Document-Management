@@ -1,0 +1,178 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.file-up {
+    position: relative;
+    overflow: hidden;
+}
+
+input[type="file"] {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #333;
+}
+
+.file-up::before {
+    content: 'Select a file';
+    display: inline-block;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+.file-up::after {
+    content: 'Browse';
+    display: inline-block;
+    padding: 8px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+.file-up:hover::before,
+.file-up:hover::after {
+    background-color: #45a049;
+}
+
+.file-up:active::before,
+.file-up:active::after {
+    background-color: #3e8e41;
+}
+
+select,
+.btn-up {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #333;
+}
+
+select {
+    background-color: #f9f9f9;
+}
+
+.btn-up {
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-up:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.btn-up:hover:enabled {
+    background-color: #45a049;
+}
+
+.btn-up:active:enabled {
+    background-color: #3e8e41;
+}
+
+.display {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.display img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    select,
+    .btn-up {
+        font-size: 14px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 5px;
+    }
+
+    select,
+    .btn-up {
+        font-size: 12px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 4px;
+    }
+}
